@@ -8,12 +8,14 @@
             :url  "https://www.eclipse.org/legal/epl-2.0/"}
 
   :dependencies [[org.clojure/clojure "1.10.0"]
+                 [org.clojure/java.data "1.0.64"]
                  [gorillalabs/sparkling "2.1.3"]]
 
   :aot [#".*" sparkling.serialization sparkling.destructuring]
 
   :profiles {:provided {:dependencies [[org.apache.spark/spark-core_2.10 "2.2.3"]
-                                       [org.apache.spark/spark-sql_2.10 "2.2.3"]]}
+                                       [org.apache.spark/spark-sql_2.10 "2.2.3"]
+                                       [org.apache.spark/spark-mllib_2.10 "2.2.3"]]}
              :dev      {:plugins [[lein-dotenv "RELEASE"]]}}
 
   ;:repl-options {:init-ns spark-definitive-guide.core}
