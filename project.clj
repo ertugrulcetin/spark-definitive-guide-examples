@@ -16,4 +16,5 @@
                                        [org.apache.spark/spark-sql_2.10 "2.2.3"]]}
              :dev      {:plugins [[lein-dotenv "RELEASE"]]}}
 
-  :repl-options {:init-ns spark-definitive-guide.core})
+  ;:repl-options {:init-ns spark-definitive-guide.core}
+  )
